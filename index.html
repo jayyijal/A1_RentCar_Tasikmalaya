@@ -4,410 +4,1304 @@
   <meta name="google-site-verification" content="xsdFfvqK9b2LzJXe6LbY09IDj_YZQnJYWKXldbfZAUc" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A1 Rent Car Tasikmalaya</title>
-  <link rel="icon" href="Image/IMG_6709_NoBG.PNG" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="A1 Rent Car Tasikmalaya - Rental mobil terpercaya, murah, lepas kunci & supir. Unit bersih, terawat, dan ready 24 jam di Kota Tasikmalaya.">
+  <meta name="keywords" content="rental mobil tasikmalaya, sewa mobil tasikmalaya, rental brio tasikmalaya, sewa innova tasikmalaya, rental hiace tasikmalaya, rental mobil lepas kunci">
+  <meta name="author" content="A1 Rent Car Tasikmalaya">
+  
+  <title>A1 Rent Car Tasikmalaya | Rental Mobil Terpercaya & Terlengkap</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Image/IMG_6709_NoBG.PNG">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style-rental.css">
 </head>
-<body>
+<body id="top">
 
-  <!-- Navbar -->
-  <nav id="navbar">
+  <!-- Scroll Progress Indicator -->
+  <div id="scrollProgress" class="scroll-progress-bar"></div>
 
+  <!-- Announcement Bar -->
+  <div class="top-announcement">
+    <div class="announcement-content">
+      <span><i class="fa-solid fa-bolt text-gold"></i> <strong>PROMO SPESIAL:</strong> Diskon Sewa 3 Hari + Gratis Antar Jemput Area Kota Tasikmalaya!</span>
+      <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20mau%20klaim%20Promo%20Sewa%203%20Hari" target="_blank" class="announcement-link">Klaim Promo <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar" id="navbar">
     <div class="logo">
-      <img src="Image/IMG_6709_NoBG.PNG" alt="logo">
-      <span>A1 Rent Car Tasikmalaya</span>
+      <img src="Image/IMG_6709_NoBG.PNG" alt="A1 Rent Car Logo">
+      <div class="logo-text">
+        <span class="brand-title">A1 RENT CAR</span>
+        <span class="brand-subtitle">Tasikmalaya</span>
+      </div>
     </div>
 
-    <!-- Tombol Dark Mode & Hamburger dikelompokkan di sini -->
+    <!-- Navigation Menu -->
+    <div class="nav-right" id="navRight">
+      <div class="nav-menu">
+        <a href="#top" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#kalkulator" class="nav-link"><i class="fa-solid fa-calculator"></i> Hitung Biaya</a>
+        <a href="#armada" class="nav-link"><i class="fa-solid fa-car"></i> Armada</a>
+        <a href="#layanan" class="nav-link"><i class="fa-solid fa-shield-halved"></i> Keunggulan</a>
+        <a href="#testimoni" class="nav-link"><i class="fa-solid fa-star"></i> Testimoni</a>
+        <a href="#faq" class="nav-link"><i class="fa-solid fa-circle-question"></i> Syarat Sewa</a>
+        <a href="#kontak" class="nav-link"><i class="fa-solid fa-phone"></i> Kontak</a>
+      </div>
+    </div>
+
+    <!-- Action Controls -->
     <div class="nav-controls">
-      <button id="darkBtn">🌙</button>
-      <button id="hamburgerBtn" class="hamburger">
+      <!-- Dark Mode Toggle Button -->
+      <button id="darkBtn" class="control-btn" aria-label="Toggle Mode Tampilan" title="Ganti Mode Gelap/Terang">
+        <i class="fa-solid fa-moon moon-icon"></i>
+        <i class="fa-solid fa-sun sun-icon"></i>
+      </button>
+
+      <!-- Fast Contact Button -->
+      <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20tanya%20unit%20tersedia" target="_blank" class="btn-nav-wa">
+        <i class="fa-brands fa-whatsapp"></i> <span class="nav-wa-text">Chat Admin</span>
+      </a>
+
+      <!-- Hamburger Mobile Button -->
+      <button id="hamburgerBtn" class="hamburger control-btn" aria-label="Buka Menu Navigasi">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
-
-    <!-- Bungkus menu yang akan disembunyikan/dimunculkan (Sekarang tanpa tombol bulan) -->
-    <div class="nav-right" id="navRight">
-      <div class="nav-menu">
-        <a href="#">Home</a>
-        <a href="#armada">Armada</a>
-        <a href="#testimoni">Testimoni</a>
-        <a href="#layanan">Layanan</a>
-        <a href="#kontak">Kontak</a>
-      </div>
-    </div>
-
   </nav>
-  <!-- Hero -->
-  <section class="hero fade-in">
 
-   <div class="hero-text">
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero fade-in" id="home">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
 
-      <h1>Sewa Mobil Terpercaya di Tasikmalaya</h1>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Rental Mobil #1 Paling Rekomended di Tasikmalaya</span>
+        </div>
 
-      <ul class="hero-features">
-        <li>✅ Mulai Rp250.000 / Hari</li>
-        <li>✅ Unit Bersih & Terawat</li>
-        <li>✅ Antar Jemput Mobil Gratis</li>
-        <li>✅ Fast Response 24 Jam</li>
-      </ul>
+        <h1 class="hero-title">
+          Perjalanan Nyaman & Bebas Ribet Bersama <span class="gradient-text">A1 Rent Car</span>
+        </h1>
 
-      <a href="https://wa.me/6281284702322?text=Halo A1 Rent Car, Saya ingin booking mobil"
-         target="_blank"
-         class="btn-hero">
-         Booking Sekarang
-      </a>
+        <p class="hero-desc">
+          Layanan sewa mobil lepas kunci & supir berpengalaman di Tasikmalaya. Unit selalu wangi, bersih terawat, ber-AC dingin, dan siap menemani perjalanan keluarga, dinas kerja, atau liburan Anda.
+        </p>
+        
+        <!-- Hero Highlights Feature Chips -->
+        <div class="hero-chips">
+          <div class="chip"><i class="fa-solid fa-circle-check text-green"></i> Mulai Rp250.000/Hari</div>
+          <div class="chip"><i class="fa-solid fa-circle-check text-green"></i> Lepas Kunci / All In Supir</div>
+          <div class="chip"><i class="fa-solid fa-circle-check text-green"></i> Gratis Antar Jemput Unit</div>
+          <div class="chip"><i class="fa-solid fa-circle-check text-green"></i> CS Fast Response 24 Jam</div>
+        </div>
 
-      <div class="hero-stats">
-        <span>⭐ 500+ Pelanggan</span>
-        <span>🚗 10+ Armada</span>
-        <span>📍 Tasikmalaya</span>
-      </div>
+        <div class="hero-actions">
+          <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20Saya%20ingin%20booking%20mobil%20sekarang"
+             target="_blank"
+             class="btn-primary btn-glow">
+             <i class="fa-brands fa-whatsapp"></i> Booking Sekarang
+          </a>
+          <a href="#kalkulator" class="btn-secondary">
+             <i class="fa-solid fa-calculator"></i> Estimasi Biaya
+          </a>
+        </div>
 
-    </div>
-    <div class="hero-slider">
-
-      <img id="slider"
-      src="Image/IMG_6709_NoBG.PNG"
-      alt="mobil">
-
-    </div>
-
-  </section>
-
-  <!-- Services -->
-
-<section class="armada fade-in" id="armada">
-    <h2>Armada Kami</h2>
-    <!-- Tambahkan class="armada-subtitle" di teksmu -->
-    <p class="armada-subtitle">Pilih kendaraan terbaik sesuai kebutuhan perjalanan Anda.</p>
-    
-    <div class="car-container">
-      <!-- ... (kode kotak mobil di bawahnya) ... -->
-
-      <div class="car-card">
-        <img src="Image/Brio Lemn.png" alt="Honda Brio">
-        <div class="car-info">
-          <h3>Honda Brio</h3>
-          <ul class="specs">
-            <li>👤 4 Kursi</li>
-            <li>⚙️ Matic (AT) / Manual (MT)</li>
-            <li>📅 2025</li>
-          </ul>
-          <p class="price">Rp 250.000 <span>/ 12 Jam</span></p>
-          <p class="price">Rp 350.000 <span>/ 24 Jam</span></p>
-          <a href="https://wa.me/6281284702322?text=Halo, saya ingin sewa Honda Brio" target="_blank" class="btn-book">Booking Sekarang</a>
+        <!-- Animated Statistics Counters -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-num" data-target="500">0</div>
+            <div class="stat-label">Pelanggan Puas</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-num" data-target="10">0</div>
+            <div class="stat-label">Pilihan Armada</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-rating">4.9 <i class="fa-solid fa-star text-gold"></i></div>
+            <div class="stat-label">Rating Google</div>
+          </div>
         </div>
       </div>
 
-      <div class="car-card">
-        <img src="Image/Innova.avif" alt="Toyota Innova">
-        <div class="car-info">
-          <h3>Toyota Innova</h3>
-          <ul class="specs">
-            <li>👤 7 Kursi</li>
-            <li>⚙️ Matic (AT) Solar</li>
-            <li>📅 2021</li>
-          </ul>
-          <p class="price">Rp 600.000 <span>/ 12 Jam</span></p>
-          <p class="price">Rp 700.000 <span>/ 24 Jam</span></p>
-          <a href="https://wa.me/6281284702322?text=Halo, saya ingin sewa Toyota Innova" target="_blank" class="btn-book">Booking Sekarang</a>
-        </div>
-      </div>
+      <!-- Hero Visual Slider with Interactive Badges -->
+      <div class="hero-visual">
+        <div class="slider-wrapper">
+          <div class="slider-backdrop"></div>
+          <img id="slider" src="Image/Innova.avif" alt="Armada Rental Mobil A1 Rent Car" class="slider-img">
+          
+          <!-- Floating Interactive Glass Badges -->
+          <div class="floating-badge badge-top-left">
+            <i class="fa-solid fa-gas-pump"></i>
+            <div>
+              <strong>Bahan Bakar Irit</strong>
+              <small>Unit Mesin Sehat</small>
+            </div>
+          </div>
 
-      <div class="car-card">
-        <img src="Image/Sigra No Bg.png" alt="Daihatsu Sigra">
-        <div class="car-info">
-          <h3>Daihatsu Sigra</h3>
-          <ul class="specs">
-            <li>👤 7 Kursi</li>
-            <li>⚙️ Matic (AT) / Manual (MT)</li>
-            <li>📅 2023</li>
-          </ul>
-          <p class="price">Rp 250.000 <span>/ 12 Jam</span></p>
-          <p class="price">Rp 350.000 <span>/ 24 Jam</span></p>
-          <a href="https://wa.me/6281284702322?text=Halo, saya ingin sewa Daihatsu Sigra" target="_blank" class="btn-book">Booking Sekarang</a>
-        </div>
-      </div>
+          <div class="floating-badge badge-bottom-right">
+            <i class="fa-solid fa-spray-can-sparkles"></i>
+            <div>
+              <strong>Unit Bersih & Wangi</strong>
+              <small>Disinfeksi Rutin</small>
+            </div>
+          </div>
 
-      <div class="car-card">
-        <img src="Image/Toyota-Fortuner no Background.png" alt="Toyota Fortuner">
-        <div class="car-info">
-          <h3>Toyota Fortuner GR</h3>
-          <ul class="specs">
-            <li>👤 7 Kursi</li>
-            <li>⚙️ Matic (AT) Solar</li>
-            <li>📅 2023</li>
-          </ul>
-          <p class="price">Not available<span>/ 12 Jam</span></p>
-          <p class="price">Rp 1.300.000 <span>/ 24 Jam</span></p>
-          <a href="https://wa.me/6281284702322?text=Halo, saya ingin sewa Toyota Fortuner" target="_blank" class="btn-book">Booking Sekarang</a>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <img src="Image/Xpander No Bg.png" alt="Mitsubisi Xpander">
-        <div class="car-info">
-          <h3>Mitsubisi Xpander</h3>
-          <ul class="specs">
-            <li>👤 7 Kursi</li>
-            <li>⚙️ Matic (AT)</li>
-            <li>📅 2023</li>
-          </ul>
-          <p class="price">Rp 400.000 <span>/ 12 Jam</span></p>
-          <p class="price">Rp 500.000 <span>/ 24 Jam</span></p>
-          <a href="https://wa.me/6281284702322?text=Halo, saya ingin sewa Mitsubisi Xpander" target="_blank" class="btn-book">Booking Sekarang</a>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <img src="Image/calya no bg.png" alt="Toyota Calya">
-        <div class="car-info">
-          <h3>Toyota Calya</h3>
-          <ul class="specs">
-            <li>👤 7 Kursi</li>
-            <li>⚙️ Matic (AT) / Manual (MT)</li>
-            <li>📅 2023</li>
-          </ul>
-          <p class="price">Rp 250.000 <span>/ 12 Jam</span></p>
-          <p class="price">Rp 350.000 <span>/ 24 Jam</span></p>
-          <a href="https://wa.me/6281284702322?text=Halo, saya ingin sewa Toyota Calya" target="_blank" class="btn-book">Booking Sekarang</a>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <img src="Image/Pajero No Bg.png" alt="Mitsubisi Pajero">
-        <div class="car-info">
-          <h3>Pajero Dakar</h3>
-          <ul class="specs">
-            <li>👤 7 Kursi</li>
-            <li>⚙️ Matic (AT) Solar</li>
-            <li>📅 2023</li>
-          </ul>
-          <p class="price">Not available <span>/ 12 Jam</span></p>
-          <p class="price">Rp 1.300.000 <span>/ 24 Jam</span></p>
-          <a href="https://wa.me/6281284702322?text=Halo, saya ingin sewa Mitsubisi Pajero" target="_blank" class="btn-book">Booking Sekarang</a>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <img src="Image/Avanza No Bg.png" alt="Toyota Avanza">
-        <div class="car-info">
-          <h3>Toyota Avanza TSS</h3>
-          <ul class="specs">
-            <li>👤 7 Kursi</li>
-            <li>⚙️ Matic (AT) / Manual (MT)</li>
-            <li>📅 2023</li>
-          </ul>
-          <p class="price">Rp 350.000 <span>/ 12 Jam</span></p>
-          <p class="price">Rp 450.000 <span>/ 24 Jam</span></p>
-          <a href="https://wa.me/6281284702322?text=Halo, saya ingin sewa Toyota Avanza" target="_blank" class="btn-book">Booking Sekarang</a>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <img src="Image/Toyota Hiace No Bg.png" alt="Toyota Hiace">
-        <div class="car-info">
-          <h3>Toyota Hiace</h3>
-          <ul class="specs">
-            <li>👤 15 Kursi</li>
-            <li><i class="fa-solid fa-music"></i> Full Karaoke</li>
-            <li>📅 2023</li>
-          </ul>
-          <p class="price">All In <span> Mobil,Supir,BBM</span></p>
-          <p class="price">Rp 1.800.000 <span>/ 24 Jam</span></p>
-          <a href="https://wa.me/6281284702322?text=Halo, saya ingin sewa Toyota Hiace" target="_blank" class="btn-book">Booking Sekarang</a>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <img src="Image/Elf Long.png" alt="Isuzu Elf">
-        <div class="car-info">
-          <h3>Isuzu Elf Long</h3>
-          <ul class="specs">
-            <li>👤 19 Kursi</li>
-            <li><i class="fa-solid fa-music"></i> Full Karaoke</li>
-            <li>📅 2023</li>
-          </ul>
-          <p class="price">All In <span> Mobil,Supir,BBM</span></p>
-          <p class="price">Rp 2.000.000 <span>/ 24 Jam</span></p>
-          <a href="https://wa.me/6281284702322?text=Halo, saya ingin sewa Isuzu Elf" target="_blank" class="btn-book">Booking Sekarang</a>
+          <!-- Slider Pagination Dots -->
+          <div class="slider-dots" id="sliderDots"></div>
         </div>
       </div>
     </div>
   </section>
-  
 
-<section class="testimoni fade-in" id="testimoni">
-    <h2>Testimoni Pelanggan</h2>
-    
+  <!-- ================= INTERACTIVE RENTAL ESTIMATOR CALCULATOR ================= -->
+  <section class="calculator-section fade-in" id="kalkulator">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-calculator"></i> Estimasi Harga Cepat</span>
+        <h2 class="section-title">Hitung Biaya Sewa Mobil Anda</h2>
+        <p class="section-subtitle">Pilih mobil, durasi sewa, dan paket layanan untuk melihat perkiraan harga dan langsung pesan melalui WhatsApp tanpa ribet.</p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calc-grid">
+          <!-- Step 1: Pilih Mobil -->
+          <div class="calc-group">
+            <label for="calcCar"><i class="fa-solid fa-car-side"></i> 1. Pilih Mobil</label>
+            <select id="calcCar" class="calc-input">
+              <option value="brio" data-price12="250000" data-price24="350000" data-type="lepas">Honda Brio (City Car) - Rp 250rb / 12 Jam</option>
+              <option value="sigra" data-price12="250000" data-price24="350000" data-type="lepas">Daihatsu Sigra (MPV 7 Seat) - Rp 250rb / 12 Jam</option>
+              <option value="calya" data-price12="250000" data-price24="350000" data-type="lepas">Toyota Calya (MPV 7 Seat) - Rp 250rb / 12 Jam</option>
+              <option value="avanza" data-price12="350000" data-price24="450000" data-type="lepas">Toyota Avanza TSS (MPV 7 Seat) - Rp 350rb / 12 Jam</option>
+              <option value="xpander" data-price12="400000" data-price24="500000" data-type="lepas">Mitsubishi Xpander (MPV 7 Seat) - Rp 400rb / 12 Jam</option>
+              <option value="innova" data-price12="600000" data-price24="700000" data-type="lepas">Toyota Innova Reborn (MPV Solar) - Rp 600rb / 12 Jam</option>
+              <option value="fortuner" data-price12="0" data-price24="1300000" data-type="lepas">Toyota Fortuner GR Sport (SUV) - Rp 1.3jt / 24 Jam</option>
+              <option value="pajero" data-price12="0" data-price24="1300000" data-type="lepas">Mitsubishi Pajero Dakar (SUV) - Rp 1.3jt / 24 Jam</option>
+              <option value="hiace" data-price12="0" data-price24="1800000" data-type="allin">Toyota Hiace (15 Seat + Supir + BBM) - Rp 1.8jt / 24 Jam</option>
+              <option value="elf" data-price12="0" data-price24="2000000" data-type="allin">Isuzu Elf Long (19 Seat + Supir + BBM) - Rp 2.0jt / 24 Jam</option>
+            </select>
+          </div>
+
+          <!-- Step 2: Pilih Durasi -->
+          <div class="calc-group">
+            <label><i class="fa-solid fa-clock"></i> 2. Durasi Sewa</label>
+            <div class="duration-toggle">
+              <button type="button" class="dur-btn active" data-dur="12">12 Jam</button>
+              <button type="button" class="dur-btn" data-dur="24">24 Jam (1 Hari)</button>
+              <button type="button" class="dur-btn" data-dur="48">2 Hari</button>
+              <button type="button" class="dur-btn" data-dur="72">3 Hari (Diskon)</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Layanan Sopir -->
+          <div class="calc-group">
+            <label><i class="fa-solid fa-user-gear"></i> 3. Paket Layanan</label>
+            <div class="service-toggle">
+              <label class="radio-card active" id="labelLepasKunci">
+                <input type="radio" name="calcService" value="lepas" checked>
+                <div class="radio-content">
+                  <strong><i class="fa-solid fa-key"></i> Lepas Kunci</strong>
+                  <small>Setir Sendiri Bebas</small>
+                </div>
+              </label>
+              <label class="radio-card" id="labelDenganSupir">
+                <input type="radio" name="calcService" value="supir">
+                <div class="radio-content">
+                  <strong><i class="fa-solid fa-user-tie"></i> + Jasa Supir</strong>
+                  <small>+Rp 150.000 / Hari</small>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Estimator Result Card -->
+        <div class="calc-result-box">
+          <div class="result-info">
+            <span class="result-label">Perkiraan Total Biaya Sewa:</span>
+            <div class="result-price" id="calcPriceDisplay">Rp 250.000</div>
+            <p class="result-notes" id="calcNoteDisplay">*Estimasi sewa Honda Brio selama 12 Jam (Lepas Kunci).</p>
+          </div>
+          <button id="calcOrderBtn" class="btn-primary btn-calc-order">
+            <i class="fa-brands fa-whatsapp"></i> Pesan via WhatsApp Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ARMADA KAMI ================= -->
+  <section class="armada fade-in" id="armada">
+    <div class="section-header text-center">
+      <span class="section-tag"><i class="fa-solid fa-car"></i> Katalog Unit Lengkap</span>
+      <h2 class="section-title">Pilihan Armada Terbaik Kami</h2>
+      <p class="section-subtitle">Seluruh unit selalu dalam kondisi prima, wangi, bersih, dan melalui pengecekan berkala sebelum diserahkan ke tangan Anda.</p>
+    </div>
+
+    <!-- Live Search & Filter Controls -->
+    <div class="fleet-controls-wrapper">
+      <!-- Search Input -->
+      <div class="fleet-search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="fleetSearchInput" placeholder="Cari nama mobil (misal: Brio, Innova, Hiace, Fortuner)...">
+        <button id="clearSearchBtn" class="clear-search-btn" style="display:none;"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <!-- Filter Categories -->
+      <div class="fleet-toolbar">
+        <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> Semua</button>
+        <button class="filter-btn" data-filter="city"><i class="fa-solid fa-car-side"></i> City Car</button>
+        <button class="filter-btn" data-filter="mpv"><i class="fa-solid fa-people-group"></i> MPV</button>
+        <button class="filter-btn" data-filter="suv"><i class="fa-solid fa-mountain"></i> SUV</button>
+        <button class="filter-btn" data-filter="van"><i class="fa-solid fa-van-shuttle"></i> Van & Elf</button>
+      </div>
+    </div>
+
+    <!-- Empty State Alert when search has no result -->
+    <div id="noCarFound" class="no-car-found" style="display: none;">
+      <i class="fa-solid fa-car-tunnel fa-3x"></i>
+      <h3>Mobil Tidak Ditemukan</h3>
+      <p>Coba gunakan kata kunci lain atau pilih kategori "Semua".</p>
+    </div>
+
+    <!-- Car Container Cards Grid -->
+    <div class="car-container" id="carGrid">
+      
+      <!-- 1. Honda Brio -->
+      <div class="car-card" data-category="city" data-name="Honda Brio">
+        <div class="card-badge">City Car</div>
+        <div class="car-image-box">
+          <img src="Image/Brio Lemn.png" alt="Honda Brio" loading="lazy">
+        </div>
+        <div class="car-info">
+          <div class="car-header">
+            <h3>Honda Brio Satya</h3>
+            <span class="fuel-tag"><i class="fa-solid fa-gas-pump"></i> Bensin</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><i class="fa-solid fa-user-group"></i> 4 Kursi</div>
+            <div class="spec-item"><i class="fa-solid fa-gear"></i> Matic (AT)</div>
+            <div class="spec-item"><i class="fa-regular fa-calendar"></i> Tahun 2025</div>
+            <div class="spec-item"><i class="fa-solid fa-snowflake"></i> Double AC</div>
+          </div>
+          <div class="pricing-box">
+            <div class="price-row">
+              <span class="price-label">12 Jam:</span>
+              <span class="price-val">Rp 250.000</span>
+            </div>
+            <div class="price-row highlight">
+              <span class="price-label">24 Jam:</span>
+              <span class="price-val">Rp 350.000</span>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="btn-card-detail" data-car="brio"><i class="fa-solid fa-circle-info"></i> Detail</button>
+            <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20booking%20Honda%20Brio" target="_blank" class="btn-book">
+              <i class="fa-brands fa-whatsapp"></i> Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Toyota Innova Reborn -->
+      <div class="car-card" data-category="mpv" data-name="Toyota Innova Reborn">
+        <div class="card-badge badge-popular">Terfavorit</div>
+        <div class="car-image-box">
+          <img src="Image/Innova.avif" alt="Toyota Innova Reborn" loading="lazy">
+        </div>
+        <div class="car-info">
+          <div class="car-header">
+            <h3>Toyota Innova Reborn</h3>
+            <span class="fuel-tag"><i class="fa-solid fa-oil-can"></i> Solar</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><i class="fa-solid fa-user-group"></i> 7 Kursi</div>
+            <div class="spec-item"><i class="fa-solid fa-gear"></i> Matic (AT)</div>
+            <div class="spec-item"><i class="fa-regular fa-calendar"></i> Tahun 2021</div>
+            <div class="spec-item"><i class="fa-solid fa-couch"></i> Captain Seat</div>
+          </div>
+          <div class="pricing-box">
+            <div class="price-row">
+              <span class="price-label">12 Jam:</span>
+              <span class="price-val">Rp 600.000</span>
+            </div>
+            <div class="price-row highlight">
+              <span class="price-label">24 Jam:</span>
+              <span class="price-val">Rp 700.000</span>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="btn-card-detail" data-car="innova"><i class="fa-solid fa-circle-info"></i> Detail</button>
+            <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20booking%20Toyota%20Innova" target="_blank" class="btn-book">
+              <i class="fa-brands fa-whatsapp"></i> Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Daihatsu Sigra -->
+      <div class="car-card" data-category="mpv" data-name="Daihatsu Sigra">
+        <div class="card-badge">Ekonomis</div>
+        <div class="car-image-box">
+          <img src="Image/Sigra No Bg.png" alt="Daihatsu Sigra" loading="lazy">
+        </div>
+        <div class="car-info">
+          <div class="car-header">
+            <h3>Daihatsu Sigra</h3>
+            <span class="fuel-tag"><i class="fa-solid fa-gas-pump"></i> Bensin</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><i class="fa-solid fa-user-group"></i> 7 Kursi</div>
+            <div class="spec-item"><i class="fa-solid fa-gear"></i> AT / Manual</div>
+            <div class="spec-item"><i class="fa-regular fa-calendar"></i> Tahun 2023</div>
+            <div class="spec-item"><i class="fa-solid fa-bolt"></i> Irit BBM</div>
+          </div>
+          <div class="pricing-box">
+            <div class="price-row">
+              <span class="price-label">12 Jam:</span>
+              <span class="price-val">Rp 250.000</span>
+            </div>
+            <div class="price-row highlight">
+              <span class="price-label">24 Jam:</span>
+              <span class="price-val">Rp 350.000</span>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="btn-card-detail" data-car="sigra"><i class="fa-solid fa-circle-info"></i> Detail</button>
+            <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20booking%20Daihatsu%20Sigra" target="_blank" class="btn-book">
+              <i class="fa-brands fa-whatsapp"></i> Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Toyota Fortuner GR -->
+      <div class="car-card" data-category="suv" data-name="Toyota Fortuner GR Sport">
+        <div class="card-badge badge-premium">Premium SUV</div>
+        <div class="car-image-box">
+          <img src="Image/Toyota-Fortuner no Background.png" alt="Toyota Fortuner GR" loading="lazy">
+        </div>
+        <div class="car-info">
+          <div class="car-header">
+            <h3>Toyota Fortuner GR</h3>
+            <span class="fuel-tag"><i class="fa-solid fa-oil-can"></i> Solar</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><i class="fa-solid fa-user-group"></i> 7 Kursi</div>
+            <div class="spec-item"><i class="fa-solid fa-gear"></i> Matic (AT)</div>
+            <div class="spec-item"><i class="fa-regular fa-calendar"></i> Tahun 2023</div>
+            <div class="spec-item"><i class="fa-solid fa-shield"></i> Gagah & Mewah</div>
+          </div>
+          <div class="pricing-box">
+            <div class="price-row">
+              <span class="price-label">12 Jam:</span>
+              <span class="price-val text-muted">-</span>
+            </div>
+            <div class="price-row highlight">
+              <span class="price-label">24 Jam:</span>
+              <span class="price-val">Rp 1.300.000</span>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="btn-card-detail" data-car="fortuner"><i class="fa-solid fa-circle-info"></i> Detail</button>
+            <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20booking%20Toyota%20Fortuner" target="_blank" class="btn-book">
+              <i class="fa-brands fa-whatsapp"></i> Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Mitsubishi Xpander -->
+      <div class="car-card" data-category="mpv" data-name="Mitsubishi Xpander">
+        <div class="card-badge">Keluarga Nyaman</div>
+        <div class="car-image-box">
+          <img src="Image/Xpander No Bg.png" alt="Mitsubishi Xpander" loading="lazy">
+        </div>
+        <div class="car-info">
+          <div class="car-header">
+            <h3>Mitsubishi Xpander</h3>
+            <span class="fuel-tag"><i class="fa-solid fa-gas-pump"></i> Bensin</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><i class="fa-solid fa-user-group"></i> 7 Kursi</div>
+            <div class="spec-item"><i class="fa-solid fa-gear"></i> Matic (AT)</div>
+            <div class="spec-item"><i class="fa-regular fa-calendar"></i> Tahun 2023</div>
+            <div class="spec-item"><i class="fa-solid fa-volume-high"></i> Suspensi Empuk</div>
+          </div>
+          <div class="pricing-box">
+            <div class="price-row">
+              <span class="price-label">12 Jam:</span>
+              <span class="price-val">Rp 400.000</span>
+            </div>
+            <div class="price-row highlight">
+              <span class="price-label">24 Jam:</span>
+              <span class="price-val">Rp 500.000</span>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="btn-card-detail" data-car="xpander"><i class="fa-solid fa-circle-info"></i> Detail</button>
+            <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20booking%20Mitsubishi%20Xpander" target="_blank" class="btn-book">
+              <i class="fa-brands fa-whatsapp"></i> Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Toyota Calya -->
+      <div class="car-card" data-category="mpv" data-name="Toyota Calya">
+        <div class="card-badge">Hemat Praktis</div>
+        <div class="car-image-box">
+          <img src="Image/calya no bg.png" alt="Toyota Calya" loading="lazy">
+        </div>
+        <div class="car-info">
+          <div class="car-header">
+            <h3>Toyota Calya</h3>
+            <span class="fuel-tag"><i class="fa-solid fa-gas-pump"></i> Bensin</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><i class="fa-solid fa-user-group"></i> 7 Kursi</div>
+            <div class="spec-item"><i class="fa-solid fa-gear"></i> AT / MT</div>
+            <div class="spec-item"><i class="fa-regular fa-calendar"></i> Tahun 2023</div>
+            <div class="spec-item"><i class="fa-solid fa-check"></i> Siap Luar Kota</div>
+          </div>
+          <div class="pricing-box">
+            <div class="price-row">
+              <span class="price-label">12 Jam:</span>
+              <span class="price-val">Rp 250.000</span>
+            </div>
+            <div class="price-row highlight">
+              <span class="price-label">24 Jam:</span>
+              <span class="price-val">Rp 350.000</span>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="btn-card-detail" data-car="calya"><i class="fa-solid fa-circle-info"></i> Detail</button>
+            <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20booking%20Toyota%20Calya" target="_blank" class="btn-book">
+              <i class="fa-brands fa-whatsapp"></i> Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Mitsubishi Pajero Sport Dakar -->
+      <div class="car-card" data-category="suv" data-name="Mitsubishi Pajero Sport Dakar">
+        <div class="card-badge badge-premium">Executive SUV</div>
+        <div class="car-image-box">
+          <img src="Image/Pajero No Bg.png" alt="Mitsubishi Pajero Dakar" loading="lazy">
+        </div>
+        <div class="car-info">
+          <div class="car-header">
+            <h3>Pajero Sport Dakar</h3>
+            <span class="fuel-tag"><i class="fa-solid fa-oil-can"></i> Solar</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><i class="fa-solid fa-user-group"></i> 7 Kursi</div>
+            <div class="spec-item"><i class="fa-solid fa-gear"></i> Matic (AT)</div>
+            <div class="spec-item"><i class="fa-regular fa-calendar"></i> Tahun 2023</div>
+            <div class="spec-item"><i class="fa-solid fa-sun"></i> Sunroof Ready</div>
+          </div>
+          <div class="pricing-box">
+            <div class="price-row">
+              <span class="price-label">12 Jam:</span>
+              <span class="price-val text-muted">-</span>
+            </div>
+            <div class="price-row highlight">
+              <span class="price-label">24 Jam:</span>
+              <span class="price-val">Rp 1.300.000</span>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="btn-card-detail" data-car="pajero"><i class="fa-solid fa-circle-info"></i> Detail</button>
+            <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20booking%20Mitsubishi%20Pajero" target="_blank" class="btn-book">
+              <i class="fa-brands fa-whatsapp"></i> Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Toyota Avanza TSS -->
+      <div class="car-card" data-category="mpv" data-name="Toyota Avanza TSS">
+        <div class="card-badge">Serbaguna</div>
+        <div class="car-image-box">
+          <img src="Image/Avanza No Bg.png" alt="Toyota Avanza TSS" loading="lazy">
+        </div>
+        <div class="car-info">
+          <div class="car-header">
+            <h3>Toyota Avanza TSS</h3>
+            <span class="fuel-tag"><i class="fa-solid fa-gas-pump"></i> Bensin</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><i class="fa-solid fa-user-group"></i> 7 Kursi</div>
+            <div class="spec-item"><i class="fa-solid fa-gear"></i> AT / MT</div>
+            <div class="spec-item"><i class="fa-regular fa-calendar"></i> Tahun 2023</div>
+            <div class="spec-item"><i class="fa-solid fa-shield-halved"></i> Safety TSS</div>
+          </div>
+          <div class="pricing-box">
+            <div class="price-row">
+              <span class="price-label">12 Jam:</span>
+              <span class="price-val">Rp 350.000</span>
+            </div>
+            <div class="price-row highlight">
+              <span class="price-label">24 Jam:</span>
+              <span class="price-val">Rp 450.000</span>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="btn-card-detail" data-car="avanza"><i class="fa-solid fa-circle-info"></i> Detail</button>
+            <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20booking%20Toyota%20Avanza" target="_blank" class="btn-book">
+              <i class="fa-brands fa-whatsapp"></i> Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Toyota Hiace -->
+      <div class="car-card" data-category="van" data-name="Toyota Hiace">
+        <div class="card-badge badge-group">Rombongan & Wisata</div>
+        <div class="car-image-box">
+          <img src="Image/Toyota Hiace No Bg.png" alt="Toyota Hiace" loading="lazy">
+        </div>
+        <div class="car-info">
+          <div class="car-header">
+            <h3>Toyota Hiace</h3>
+            <span class="fuel-tag"><i class="fa-solid fa-oil-can"></i> Solar</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><i class="fa-solid fa-user-group"></i> 15 Kursi</div>
+            <div class="spec-item"><i class="fa-solid fa-music"></i> Full Karaoke</div>
+            <div class="spec-item"><i class="fa-regular fa-calendar"></i> Tahun 2023</div>
+            <div class="spec-item"><i class="fa-solid fa-tv"></i> Audio Video</div>
+          </div>
+          <div class="pricing-box">
+            <div class="price-row">
+              <span class="price-label">Paket:</span>
+              <span class="price-val">All In (Mobil+Supir+BBM)</span>
+            </div>
+            <div class="price-row highlight">
+              <span class="price-label">24 Jam:</span>
+              <span class="price-val">Rp 1.800.000</span>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="btn-card-detail" data-car="hiace"><i class="fa-solid fa-circle-info"></i> Detail</button>
+            <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20booking%20Toyota%20Hiace" target="_blank" class="btn-book">
+              <i class="fa-brands fa-whatsapp"></i> Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Isuzu Elf Long -->
+      <div class="car-card" data-category="van" data-name="Isuzu Elf Long">
+        <div class="card-badge badge-group">Kapasitas Maksimal</div>
+        <div class="car-image-box">
+          <img src="Image/Elf Long.png" alt="Isuzu Elf Long" loading="lazy">
+        </div>
+        <div class="car-info">
+          <div class="car-header">
+            <h3>Isuzu Elf Long</h3>
+            <span class="fuel-tag"><i class="fa-solid fa-oil-can"></i> Solar</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><i class="fa-solid fa-user-group"></i> 19 Kursi</div>
+            <div class="spec-item"><i class="fa-solid fa-music"></i> Full Karaoke</div>
+            <div class="spec-item"><i class="fa-regular fa-calendar"></i> Tahun 2023</div>
+            <div class="spec-item"><i class="fa-solid fa-suitcase"></i> Bagasi Luas</div>
+          </div>
+          <div class="pricing-box">
+            <div class="price-row">
+              <span class="price-label">Paket:</span>
+              <span class="price-val">All In (Mobil+Supir+BBM)</span>
+            </div>
+            <div class="price-row highlight">
+              <span class="price-label">24 Jam:</span>
+              <span class="price-val">Rp 2.000.000</span>
+            </div>
+          </div>
+          <div class="card-buttons">
+            <button class="btn-card-detail" data-car="elf"><i class="fa-solid fa-circle-info"></i> Detail</button>
+            <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20booking%20Isuzu%20Elf" target="_blank" class="btn-book">
+              <i class="fa-brands fa-whatsapp"></i> Booking
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tombol Lihat Semua Armada -->
+    <div class="view-all-wrapper">
+      <button id="viewAllBtn" class="view-all-btn">
+        <span>Lihat Semua Armada</span> <i class="fa-solid fa-chevron-down"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= CAR DETAIL MODAL (POPUP) ================= -->
+  <div id="carModal" class="modal-backdrop" style="display:none;">
+    <div class="modal-dialog">
+      <button id="closeModalBtn" class="modal-close" aria-label="Tutup Detail Mobil"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body" id="modalContent">
+        <!-- Content will be injected dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TESTIMONI ================= -->
+  <section class="testimoni fade-in" id="testimoni">
+    <div class="section-header text-center">
+      <span class="section-tag"><i class="fa-solid fa-comments"></i> Real Customer Reviews</span>
+      <h2 class="section-title">Apa Kata Pelanggan A1 Rent Car?</h2>
+      <p class="section-subtitle">Ulasan asli & terverifikasi dari ratusan pelanggan yang puas dengan pelayanan kami di Tasikmalaya.</p>
+      
+      <!-- Google Review Trust Badge -->
+      <div class="google-trust-badge">
+        <div class="google-logo-wrap">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+          <span class="google-title">Google Reviews</span>
+        </div>
+        <div class="google-rating-score">
+          <strong class="score-num">5.0</strong>
+          <div class="stars-row">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="rating-count">(50+ Ulasan Bintang 5)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Infinite Smooth Reviews Marquee -->
     <div class="testimoni-container">
-
       <div class="testimoni-track">
-        <div class="testimoni-img-card"><img src="Image/Riview 1.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 2.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 3.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 4.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 5.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 6.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 7.png" alt="Review"></div>
+        
+        <!-- Review 1: Nazwa Magriza -->
+        <div class="review-card" data-img="Image/Riview 1.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-nm">NM</div>
+            <div class="review-user-info">
+              <h4>Nazwa Magriza</h4>
+              <span class="review-badge"><i class="fa-solid fa-circle-check"></i> Pelanggan Terverifikasi</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">1 bulan lalu</span>
+          </div>
+          <p class="review-comment">
+            "Pengalaman sewa mobil di A1 car bener' memuaskan! Mobil datang tepat waktu, kondisi bersih, terawat, dan nyaman dipakai. Admin fast respon dan komunikatif dari awal sampai selesai. Pasti bakal sewa di sini lagi. Terima kasih banyak sukses slalu kaa 🙏✨"
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Honda Brio</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 2: Rijal Jayyid -->
+        <div class="review-card" data-img="Image/Riview 2.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-rj">RJ</div>
+            <div class="review-user-info">
+              <h4>Rijal Jayyid</h4>
+              <span class="review-badge"><i class="fa-solid fa-circle-check"></i> Pelanggan Terverifikasi</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">3 minggu lalu</span>
+          </div>
+          <p class="review-comment">
+            "Top mantap is the best, Bersih bersih Mobil nya safe poko nyaa. Pelayanan ramah, armada terawat dan siap pakai tanpa kendala."
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Innova Reborn</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 3: Daffa Ramdya Bz. -->
+        <div class="review-card" data-img="Image/Riview 3.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-dr">DR</div>
+            <div class="review-user-info">
+              <h4>Daffa Ramdya Bz.</h4>
+              <span class="review-badge badge-guide"><i class="fa-solid fa-map-pin"></i> Local Guide</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">2 bulan lalu</span>
+          </div>
+          <p class="review-comment">
+            "Ngerental disini ga akan nyesel sih, unit rapih, wangi, siap dibawa jalan jauh. Respon admin cepet ga pake lama. Semoga kedepannya bisa nambah armada lagi ya 😄"
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Daihatsu Sigra</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 4: Saadah Alzeta -->
+        <div class="review-card" data-img="Image/Riview 4.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-sa">SA</div>
+            <div class="review-user-info">
+              <h4>Saadah Alzeta</h4>
+              <span class="review-badge"><i class="fa-solid fa-circle-check"></i> Pelanggan Terverifikasi</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">1 bulan lalu</span>
+          </div>
+          <p class="review-comment">
+            "Pelayanan terbaik recommended 🥇. Mobil mulus, wangi, irit bbm dan proses peminjaman sangat praktis tanpa ribet sama sekali."
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Toyota Calya</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 5: Syahrul Muharrom -->
+        <div class="review-card" data-img="Image/Riview 5.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-sm">SM</div>
+            <div class="review-user-info">
+              <h4>Syahrul Muharrom</h4>
+              <span class="review-badge badge-guide"><i class="fa-solid fa-map-pin"></i> Local Guide</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">1 bulan lalu</span>
+          </div>
+          <p class="review-comment">
+            "is the best pokoknya persyaratan ga ribet mobil nya pada bersih nyaman lagi. Rekomendasi rental mobil terbaik di Tasikmalaya!"
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Avanza TSS</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 6: Rahman Arip -->
+        <div class="review-card" data-img="Image/Riview 6.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-ra">RA</div>
+            <div class="review-user-info">
+              <h4>Rahman Arip</h4>
+              <span class="review-badge"><i class="fa-solid fa-circle-check"></i> Pelanggan Terverifikasi</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">2 minggu lalu</span>
+          </div>
+          <p class="review-comment">
+            "mobilnya nyaman bersih dan pelayanan nya cukup baik juga  mobil di antar kerumah jugaa pokoknya jadi langganan deh"
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Xpander</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 7: Xyrooo. -->
+        <div class="review-card" data-img="Image/Riview 7.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-xy">XY</div>
+            <div class="review-user-info">
+              <h4>Xyrooo.</h4>
+              <span class="review-badge badge-guide"><i class="fa-solid fa-map-pin"></i> Local Guide</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">1 bulan lalu</span>
+          </div>
+          <p class="review-comment">
+            "Pelayanan di A1 RENT CAR sangat profesional, kendaraan dalam kondisi prima, dan proses administrasi berjalan lancar. Sangat puas dengan layanan yang diberikan. Terbaik 👍"
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Fortuner GR</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
       </div>
 
-      <div class="testimoni-track">
-        <div class="testimoni-img-card"><img src="Image/Riview 1.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 2.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 3.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 4.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 5.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 6.png" alt="Review"></div>
-        <div class="testimoni-img-card"><img src="Image/Riview 7.png" alt="Review"></div>
+      <!-- Duplicate Track for Seamless Infinite Scrolling -->
+      <div class="testimoni-track" aria-hidden="true">
+        
+        <!-- Review 1: Nazwa Magriza -->
+        <div class="review-card" data-img="Image/Riview 1.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-nm">NM</div>
+            <div class="review-user-info">
+              <h4>Nazwa Magriza</h4>
+              <span class="review-badge"><i class="fa-solid fa-circle-check"></i> Pelanggan Terverifikasi</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">1 bulan lalu</span>
+          </div>
+          <p class="review-comment">
+            "Pengalaman sewa mobil di A1 car bener' memuaskan! Mobil datang tepat waktu, kondisi bersih, terawat, dan nyaman dipakai. Admin fast respon dan komunikatif dari awal sampai selesai. Pasti bakal sewa di sini lagi. Terima kasih banyak sukses slalu kaa 🙏✨"
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Honda Brio</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 2: Rijal Jayyid -->
+        <div class="review-card" data-img="Image/Riview 2.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-rj">RJ</div>
+            <div class="review-user-info">
+              <h4>Rijal Jayyid</h4>
+              <span class="review-badge"><i class="fa-solid fa-circle-check"></i> Pelanggan Terverifikasi</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">3 minggu lalu</span>
+          </div>
+          <p class="review-comment">
+            "Top mantap is the best, Bersih bersih Mobil nya safe poko nyaa. Pelayanan ramah, armada terawat dan siap pakai tanpa kendala."
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Innova Reborn</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 3: Daffa Ramdya Bz. -->
+        <div class="review-card" data-img="Image/Riview 3.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-dr">DR</div>
+            <div class="review-user-info">
+              <h4>Daffa Ramdya Bz.</h4>
+              <span class="review-badge badge-guide"><i class="fa-solid fa-map-pin"></i> Local Guide</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">2 bulan lalu</span>
+          </div>
+          <p class="review-comment">
+            "Ngerental disini ga akan nyesel sih, unit rapih, wangi, siap dibawa jalan jauh. Respon admin cepet ga pake lama. Semoga kedepannya bisa nambah armada lagi ya 😄"
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Daihatsu Sigra</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 4: Saadah Alzeta -->
+        <div class="review-card" data-img="Image/Riview 4.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-sa">SA</div>
+            <div class="review-user-info">
+              <h4>Saadah Alzeta</h4>
+              <span class="review-badge"><i class="fa-solid fa-circle-check"></i> Pelanggan Terverifikasi</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">1 bulan lalu</span>
+          </div>
+          <p class="review-comment">
+            "Pelayanan terbaik recommended 🥇. Mobil mulus, wangi, irit bbm dan proses peminjaman sangat praktis tanpa ribet sama sekali."
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Toyota Calya</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 5: Syahrul Muharrom -->
+        <div class="review-card" data-img="Image/Riview 5.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-sm">SM</div>
+            <div class="review-user-info">
+              <h4>Syahrul Muharrom</h4>
+              <span class="review-badge badge-guide"><i class="fa-solid fa-map-pin"></i> Local Guide</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">1 bulan lalu</span>
+          </div>
+          <p class="review-comment">
+            "is the best pokoknya persyaratan ga ribet mobil nya pada bersih nyaman lagi. Rekomendasi rental mobil terbaik di Tasikmalaya!"
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Avanza TSS</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 6: Rahman Arip -->
+        <div class="review-card" data-img="Image/Riview 6.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-ra">RA</div>
+            <div class="review-user-info">
+              <h4>Rahman Arip</h4>
+              <span class="review-badge"><i class="fa-solid fa-circle-check"></i> Pelanggan Terverifikasi</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">2 minggu lalu</span>
+          </div>
+          <p class="review-comment">
+            "mobilnya nyaman bersih dan pelayanan nya cukup baik juga  mobil di antar kerumah jugaa pokoknya jadi langganan deh"
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Xpander</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
+        <!-- Review 7: Xyrooo. -->
+        <div class="review-card" data-img="Image/Riview 7.png">
+          <div class="review-card-header">
+            <div class="review-avatar avatar-xy">XY</div>
+            <div class="review-user-info">
+              <h4>Xyrooo.</h4>
+              <span class="review-badge badge-guide"><i class="fa-solid fa-map-pin"></i> Local Guide</span>
+            </div>
+            <div class="google-icon-card"><i class="fa-brands fa-google"></i></div>
+          </div>
+          <div class="review-stars-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="review-time">1 bulan lalu</span>
+          </div>
+          <p class="review-comment">
+            "Pelayanan di A1 RENT CAR sangat profesional, kendaraan dalam kondisi prima, dan proses administrasi berjalan lancar. Sangat puas dengan layanan yang diberikan. Terbaik 👍"
+          </p>
+          <div class="review-footer">
+            <span class="rent-tag"><i class="fa-solid fa-car-side"></i> Sewa Fortuner GR</span>
+            <span class="btn-preview-img"><i class="fa-regular fa-image"></i> Bukti Ulasan</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <!-- ================= IMAGE LIGHTBOX MODAL ================= -->
+  <div id="imageLightbox" class="lightbox-backdrop" style="display:none;">
+    <button id="closeLightboxBtn" class="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+    <img id="lightboxImg" src="" alt="Review Preview">
+  </div>
+
+  <!-- ================= LAYANAN & KEUNGGULAN ================= -->
   <section class="services fade-in" id="layanan">
-    <h2>Layanan Kami</h2>
-    
+    <div class="section-header text-center">
+      <span class="section-tag"><i class="fa-solid fa-gem"></i> Kenapa Memilih Kami</span>
+      <h2 class="section-title">Keunggulan Layanan A1 Rent Car</h2>
+      <p class="section-subtitle">Kami berkomitmen memberikan pengalaman rental mobil terbaik, aman, dan paling transparan di Kota Tasikmalaya.</p>
+    </div>
+
     <div class="service-container">
-      <div class="card">
-        <!-- Tambahan Ikon Kalender -->
-        <i class="fa-regular fa-calendar-check fa-3x" style="color: #25d366; margin-bottom: 20px;"></i>
-        <h3>Rental Harian</h3>
-        <p>Cocok untuk liburan dan perjalanan.</p>
+      <div class="card service-card">
+        <div class="service-icon-box">
+          <i class="fa-solid fa-car-on"></i>
+        </div>
+        <h3>Armada Terawat & Bersih</h3>
+        <p>Unit rutin servis berkala di bengkel resmi, dicuci bersih, wangi, dan disinfeksi sebelum diserahkan ke pelanggan.</p>
       </div>
 
-      <div class="card">
-        <!-- Tambahan Ikon Supir -->
-        <i class="fa-solid fa-user-tie fa-3x" style="color: #25d366; margin-bottom: 20px;"></i>
-        <h3>Driver Profesional</h3>
-        <p>Supir ramah dan berpengalaman.</p>
+      <div class="card service-card">
+        <div class="service-icon-box">
+          <i class="fa-solid fa-user-tie"></i>
+        </div>
+        <h3>Driver Berpengalaman</h3>
+        <p>Supir ramah, sopan, berpakaian rapi, tidak merokok dalam kabin, dan hafal seluruh rute wisata maupun jalan alternatif.</p>
       </div>
 
-      <div class="card">
-        <!-- Tambahan Ikon Harga/Diskon -->
-        <i class="fa-solid fa-tags fa-3x" style="color: #25d366; margin-bottom: 20px;"></i>
-        <h3>Harga Murah</h3>
-        <p>Kualitas terbaik dengan harga terjangkau.</p>
+      <div class="card service-card">
+        <div class="service-icon-box">
+          <i class="fa-solid fa-truck-ramp-box"></i>
+        </div>
+        <h3>Gratis Antar Jemput Unit</h3>
+        <p>Layanan antar jemput mobil gratis langsung ke rumah, hotel, stasiun, atau kantor Anda khusus area Kota Tasikmalaya.</p>
+      </div>
+
+      <div class="card service-card">
+        <div class="service-icon-box">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+        </div>
+        <h3>Harga Jujur & Terjangkau</h3>
+        <p>Tarif transparan tanpa biaya tersembunyi. Dapatkan potongan diskon menarik untuk sewa jangka panjang & mingguan.</p>
+      </div>
+    </div>
+
+    <!-- Booking Workflow Steps -->
+    <div class="workflow-box">
+      <h3 class="workflow-title"><i class="fa-solid fa-route"></i> 3 Langkah Mudah Booking Mobil</h3>
+      <div class="workflow-steps">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h4>Pilih Mobil & Tanggal</h4>
+          <p>Tentukan tipe mobil yang cocok dengan kebutuhan perjalanan Anda.</p>
+        </div>
+        <div class="step-arrow"><i class="fa-solid fa-angle-right"></i></div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h4>Kirim Syarat via WhatsApp</h4>
+          <p>Kirim foto e-KTP & SIM A secara instan ke nomor WhatsApp admin kami.</p>
+        </div>
+        <div class="step-arrow"><i class="fa-solid fa-angle-right"></i></div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h4>Mobil Siap Digunakan</h4>
+          <p>Unit siap diambil di garasi atau kami antarkan langsung ke lokasi Anda!</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Bagian FAQ / Syarat Sewa -->
+  <!-- ================= FAQ / SYARAT SEWA ================= -->
   <section class="faq fade-in" id="faq">
-    <h2>Syarat & Ketentuan Sewa</h2>
-    
+    <div class="section-header text-center">
+      <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Informasi Lengkap</span>
+      <h2 class="section-title">Syarat & Ketentuan Sewa</h2>
+      <p class="section-subtitle">Pelajari ketentuan sewa lepas kunci dan all-in agar proses booking Anda berjalan lancar dan cepat.</p>
+    </div>
+
     <div class="faq-container">
-      
-      <!-- Pertanyaan 1 -->
       <div class="faq-item">
         <button class="faq-question">
-          Apa saja syarat untuk sewa lepas kunci? 
-          <i class="fa-solid fa-chevron-down"></i>
+          <span><i class="fa-solid fa-key text-green"></i> Apa saja syarat untuk sewa mobil lepas kunci?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
         </button>
         <div class="faq-answer">
-          <p>Untuk sewa lepas kunci, penyewa wajib melampirkan e-KTP asli, SIM A yang masih aktif, serta menitipkan jaminan berupa sepeda motor dan STNK atas nama pribadi saat pengambilan mobil.</p>
+          <p>Untuk sewa lepas kunci (setir sendiri), penyewa wajib memenuhi persyaratan berikut:<br>
+          1. <strong>e-KTP Asli</strong> penyewa (domisili jelas).<br>
+          2. <strong>SIM A Asli</strong> yang masih berlaku aktif.<br>
+          3. Menitipkan jaminan berupa <strong>Sepeda Motor + STNK Asli</strong> atas nama pribadi saat serah terima unit.<br>
+          4. Menunjukkan akun sosial media aktif (Instagram / Facebook / LinkedIn).</p>
         </div>
       </div>
 
-      <!-- Pertanyaan 2 -->
       <div class="faq-item">
         <button class="faq-question">
-          Apakah bisa sewa mobil beserta supir (All In)? 
-          <i class="fa-solid fa-chevron-down"></i>
+          <span><i class="fa-solid fa-user-tie text-green"></i> Apakah bisa sewa mobil beserta supir (All In)?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
         </button>
         <div class="faq-answer">
-          <p>Tentu bisa! Kami menyediakan layanan sewa All In (Mobil + Supir + BBM) untuk perjalanan dalam maupun luar kota agar Anda bisa duduk santai menikmati perjalanan.</p>
+          <p><strong>Tentu sangat bisa!</strong> Kami menyediakan paket All In (Mobil + Supir Profesional + BBM) untuk perjalanan dalam maupun luar kota (Bandung, Jakarta, Pangandaran, Jogja, dll) agar Anda dan keluarga bisa duduk nyaman tanpa perlu lelah menyetir.</p>
         </div>
       </div>
 
-      <!-- Pertanyaan 3 -->
       <div class="faq-item">
         <button class="faq-question">
-          Bagaimana jika terjadi keterlambatan pengembalian? 
-          <i class="fa-solid fa-chevron-down"></i>
+          <span><i class="fa-solid fa-clock-rotate-left text-green"></i> Bagaimana jika terjadi keterlambatan pengembalian (Overtime)?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
         </button>
         <div class="faq-answer">
-          <p>Keterlambatan pengembalian (Overtime) akan dikenakan biaya tambahan sebesar 10% dari harga sewa per hari untuk setiap jam keterlambatan. Jika lebih dari 6 jam, akan dihitung sewa 1 hari penuh.</p>
+          <p>Keterlambatan pengembalian unit dikenakan biaya overtime sebesar <strong>10% per jam</strong> dari tarif sewa harian. Apabila keterlambatan melebihi 6 jam, maka akan dihitung biaya sewa 1 hari penuh. Harap selalu konfirmasi admin jika ingin extend.</p>
         </div>
       </div>
 
-      <!-- Pertanyaan 4 -->
       <div class="faq-item">
         <button class="faq-question">
-          Apakah ada layanan antar jemput mobil? 
-          <i class="fa-solid fa-chevron-down"></i>
+          <span><i class="fa-solid fa-location-dot text-green"></i> Apakah ada layanan antar jemput mobil ke lokasi?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
         </button>
         <div class="faq-answer">
-          <p>Ya, kami menyediakan layanan antar jemput armada gratis khusus untuk wilayah pusat Kota Tasikmalaya. Untuk area luar kota, akan disesuaikan dengan jarak tempuh.</p>
+          <p><strong>Ya, GRATIS!</strong> Khusus wilayah pusat Kota Tasikmalaya (Stasiun Tasikmalaya, Pool Bus Primajasa/Budiman, Hotel, dan Perumahan), kami sediakan layanan antar jemput unit bebas biaya tambahan.</p>
         </div>
       </div>
 
+      <div class="faq-item">
+        <button class="faq-question">
+          <span><i class="fa-solid fa-credit-card text-green"></i> Bagaimana sistem pembayaran dan booking?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Booking unit cukup dengan DP (Down Payment) minimal Rp 50.000 - Rp 100.000 sebagai tanda jadi penguncian jadwal. Pelunasan dapat dilakukan via Transfer Bank / QRIS / Cash saat mobil diserahkan.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-<section class="cta fade-in">
-    <h2>Butuh Mobil Hari Ini?</h2>
-    <p>Hubungi kami sekarang dan dapatkan unit terbaik untuk perjalanan Anda.</p>
-    
-    <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20butuh%20mobil%20hari%20ini" target="_blank" class="btn-cta">
-      <i class="fa-brands fa-whatsapp"></i> Booking Via WhatsApp
-    </a>
+  <!-- ================= CALL TO ACTION ================= -->
+  <section class="cta fade-in">
+    <div class="cta-glow"></div>
+    <div class="cta-inner">
+      <span class="cta-tag"><i class="fa-solid fa-sparkles"></i> Siap Melayani 24 Jam Nonstop</span>
+      <h2>Rencanakan Perjalanan Anda Bersama A1 Rent Car</h2>
+      <p>Jangan sampai kehabisan unit mobil di tanggal liburan Anda! Hubungi admin kami sekarang untuk cek ketersediaan armada dan penawaran harga terbaik.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20tanya%20jadwal%20sewa%20mobil" target="_blank" class="btn-cta">
+          <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp Sekarang
+        </a>
+        <a href="tel:+6281284702322" class="btn-cta-phone">
+          <i class="fa-solid fa-phone"></i> Hubungi via Telepon
+        </a>
+      </div>
+    </div>
   </section>
 
-<footer class="footer-modern" id="kontak">
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-modern" id="kontak">
     <div class="footer-container">
-      
-<div class="footer-col">
-        <img src="Image/IMG_6709_NoBG.PNG" alt="Logo A1 Rent Car" class="footer-logo">
-        <p>Berkendara dengan "A1 Rent Car Tasikmalaya" adalah pengalaman yang lebih dari sekadar perjalanan.</p>
-
-      </div>
-
+      <!-- Col 1: Brand Info -->
       <div class="footer-col">
-        <h3>Links</h3>
-        <ul>
-          <li><a href="#">➔ Home</a></li>
-          <li><a href="#testimoni">➔ Testimoni</a></li>
-          <li><a href="#armada">➔ Harga Sewa</a></li>
-          <li><a href="#kontak">➔ Kontak</a></li>
-        </ul>
-
+        <div class="footer-brand">
+          <img src="Image/IMG_6709_NoBG.PNG" alt="A1 Rent Car Logo" class="footer-logo">
+          <h3>A1 RENT CAR TASIKMALAYA</h3>
+        </div>
+        <p>Solusi jasa rental mobil terpercaya di Tasikmalaya dengan pelayanan profesional, armada bersih, terawat, dan harga bersahabat untuk semua kalangan.</p>
         <div class="social-links">
-          <a href="https://www.instagram.com/a1rentcar_tasikmalaya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.tiktok.com/@a1_rentcartasikmalaya?_r=1&_t=ZS-96nY7BoYLYG" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/a1rentcar_tasikmalaya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@a1_rentcartasikmalaya?_r=1&_t=ZS-96nY7BoYLYG" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://wa.me/6281284702322" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
 
+      <!-- Col 2: Navigation Links -->
       <div class="footer-col">
-        <h3>Hubungi Kami</h3>
+        <h3>Navigasi Cepat</h3>
         <ul>
-          <li><a href="https://wa.me/6281284702322" target="_blank">📱 WhatsApp</a></li>
-          <li><a href="tel:+6281284702322">📞 Telepon</a></li>
-          <li><a href="https://maps.app.goo.gl/pL52EXB5xBjRnff18">📍 Kunjungi Kami</a></li>
+          <li><a href="#top"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="#kalkulator"><i class="fa-solid fa-chevron-right"></i> Estimasi Biaya</a></li>
+          <li><a href="#armada"><i class="fa-solid fa-chevron-right"></i> Katalog Armada</a></li>
+          <li><a href="#testimoni"><i class="fa-solid fa-chevron-right"></i> Review Pelanggan</a></li>
+          <li><a href="#faq"><i class="fa-solid fa-chevron-right"></i> Syarat & Ketentuan</a></li>
         </ul>
       </div>
 
+      <!-- Col 3: Contact Details -->
       <div class="footer-col">
-        <h3>Garasi Kami</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.7216754274123!2d108.21579967454753!3d-7.373361872566778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f57881e7fc6d9%3A0x43079992177ab3cb!2sA1%20RENT%20CAR%20Tasikmalaya%20tour%20%26%20travel!5e1!3m2!1sid!2sid!4v1779521276590!5m2!1sid!2sid" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3>Kontak Kami</h3>
+        <ul class="contact-list">
+          <li><a href="https://wa.me/6281284702322" target="_blank"><i class="fa-brands fa-whatsapp text-green"></i> +62 812-8470-2322</a></li>
+          <li><a href="tel:+6281284702322"><i class="fa-solid fa-phone text-green"></i> 0812-8470-2322</a></li>
+          <li><span><i class="fa-solid fa-clock text-green"></i> 24 Jam / 7 Hari Buka</span></li>
+          <li><a href="https://maps.app.goo.gl/pL52EXB5xBjRnff18" target="_blank"><i class="fa-solid fa-location-dot text-green"></i> Tasikmalaya, Jawa Barat</a></li>
+        </ul>
       </div>
 
+      <!-- Col 4: Garasi Kami & Maps -->
+      <div class="footer-col">
+        <h3>Lokasi Garasi Kami</h3>
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.7216754274123!2d108.21579967454753!3d-7.373361872566778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f57881e7fc6d9%3A0x43079992177ab3cb!2sA1%20RENT%20CAR%20Tasikmalaya%20tour%20%26%20travel!5e1!3m2!1sid!2sid!4v1779521276590!5m2!1sid!2sid" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps Lokasi A1 Rent Car"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 <strong>A1 Rent Car Tasikmalaya</strong>. All Rights Reserved. Designed for best customer experience.</p>
     </div>
   </footer>
 
-  <div class="footer-bottom">
-    <p>Copyright © 2026 A1 Rent Car Tasikmalaya | By JayyCode_</p>
+  <!-- ================= FLOATING WHATSAPP WIDGET WITH INTERACTIVE POPUP ================= -->
+  <div class="floating-wa-wrapper" id="waWidget">
+    <!-- Interactive Greeting Popup Bubble -->
+    <div class="wa-popup-bubble" id="waBubble">
+      <button class="wa-bubble-close" id="closeWaBubble" aria-label="Tutup pesan">&times;</button>
+      <div class="wa-bubble-header">
+        <div class="wa-avatar">
+          <img src="Image/IMG_6709_NoBG.PNG" alt="Customer Support">
+          <span class="online-indicator"></span>
+        </div>
+        <div class="wa-info">
+          <strong>Admin A1 Rent Car</strong>
+          <small>Online Siap Melayani</small>
+        </div>
+      </div>
+      <p class="wa-bubble-text">Halo kak! Mau sewa mobil apa hari ini? Tanya jadwal & diskon harga di sini yuk! 😊</p>
+      <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20tanya%20ketersediaan%20mobil" target="_blank" class="wa-bubble-btn">
+        <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+      </a>
+    </div>
+
+    <!-- Floating Circular WA Button -->
+    <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20ingin%20bertanya%20sewa%20mobil" target="_blank" class="wa-float" id="waFloatBtn" aria-label="Hubungi kami via WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="wa-pulse"></span>
+      <span class="wa-text">Chat WhatsApp</span>
+    </a>
   </div>
 
-<a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20mau%20tanya%20harga%20sewa%20mobil" class="wa-float" target="_blank">
-    <!-- Menggunakan logo WhatsApp asli dari Font Awesome -->
-    <i class="fa-brands fa-whatsapp"></i> 
-    <!-- Membungkus teks agar bisa disembunyikan di HP -->
-    <span class="wa-text">Tanya Harga? Chat Sekarang</span>
-  </a>
+  <!-- ================= REAL-TIME LIVE BOOKING SOCIAL PROOF TOAST ================= -->
+  <div id="liveBookingToast" class="live-toast" style="display:none;">
+    <div class="toast-icon"><i class="fa-solid fa-car text-green"></i></div>
+    <div class="toast-body">
+      <strong id="toastUser">Pak Budi (Tasikmalaya)</strong>
+      <p id="toastMessage">Baru saja booking Honda Brio (24 Jam)</p>
+      <small id="toastTime">1 menit yang lalu</small>
+    </div>
+    <button class="toast-close" id="closeToast">&times;</button>
+  </div>
 
+  <!-- ================= JAVASCRIPT ================= -->
   <script src="script.js"></script>
-
 </body>
 </html>
