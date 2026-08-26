@@ -217,6 +217,87 @@ document.addEventListener("DOMContentLoaded", () => {
      6. INTERACTIVE RENTAL ESTIMATOR CALCULATOR
      ========================================================== */
   const calcCar = document.getElementById("calcCar");
+  /* ==========================================================
+     WHATSAPP BOOKING TEMPLATE GENERATOR
+     ========================================================== */
+  const WA_PHONE_NUMBER = "6281284702322";
+
+  function createBookingMessage({ carName = "", duration = "", service = "" } = {}) {
+    const durasiText = duration ? duration : "";
+    const typeText = carName ? carName : "";
+
+    const palm = "\uD83C\uDF34";
+    const carEmoji = "\uD83D\uDE97";
+    const motorEmoji = "\uD83D\uDEF5";
+    const prayEmoji = "\uD83D\uDE4F\uD83C\uDFFB";
+
+    return "Selamat datang di A1 RENT CAR TASIKMALAYA\n\n\n" +
+      carEmoji + motorEmoji + "FORM PEMESANAN" + motorEmoji + carEmoji + "\n" +
+      "————————————————\n" +
+      palm + "Nama : \n" +
+      palm + "NO Hp Aktif : \n" +
+      palm + "NO HP darurat : \n" +
+      palm + "Durasi Sewa : " + durasiText + "\n" +
+      palm + "Tanggal Sewa : \n" +
+      palm + "Jam sewa : \n" +
+      palm + "Alamat penyewa : \n" +
+      palm + "Type mobil/motor: " + typeText + "\n" +
+      palm + "Tujuan dalam kota/luar : \n" +
+      palm + "Akun tiktok : \n" +
+      palm + "Akun Instagram : \n" +
+      palm + "Akun facebook : \n \n" +
+      "Pembayaran cash/tf lunas saat unit di terima\n" +
+      "————————————\n" +
+      palm + "pemakaian bisa dalam kota/luar kota dengan persetujuan dari awal\n" +
+      palm + " khusus motor hanya bisa dalam kota (tasikmalaya dan ciamis)\n" +
+      palm + "Copy paste lalu isi form ( gampang simple )\n" +
+      palm + " form ini kirim ke wa dan ke dm instagram/tiktok kami \n" +
+      palm + "kerusakan dan kehilangan tanggung jawab penyewa.\n" +
+      palm + " Lecet ringan perpanel/400k , lecet besar menyesuaikan harga kondisi lecet.\n" +
+      palm + "Saat mobil di terima wajib lengkapi tanda terima nota yg di berikan tim lapangan \n" +
+      palm + "Pembayaran wajib tf, extend tambah hari atau overtime dan bbm kurang atau lecet konfirmasi ke admin\n" +
+      palm + "Booking unit disarankan minimal H-7 , Untuk menjadwal unit dipastikan masuk Down Payment(DP) terlebih dahulu:\n" +
+      "4180870062 bca ahmad\n\n" +
+      "Isi dengan benar supaya tidak miskom terimakasih" + prayEmoji + palm;
+  }
+
+  function getBookingWaUrl(options = {}) {
+    const message = createBookingMessage(options);
+    return `https://wa.me/${WA_PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+  }
+
+  // Update and attach events to all booking buttons
+  document.querySelectorAll(".btn-book").forEach(btn => {
+    const carCard = btn.closest(".car-card");
+    const carName = carCard ? carCard.getAttribute("data-name") || "" : "";
+    const url = getBookingWaUrl({ carName });
+    btn.setAttribute("href", url);
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.open(url, "_blank");
+    });
+  });
+
+  const heroBookingBtn = document.querySelector(".hero-actions .btn-primary");
+  if (heroBookingBtn) {
+    const url = getBookingWaUrl();
+    heroBookingBtn.setAttribute("href", url);
+    heroBookingBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.open(url, "_blank");
+    });
+  }
+
+  const ctaBookingBtn = document.querySelector(".cta-buttons .btn-cta");
+  if (ctaBookingBtn) {
+    const url = getBookingWaUrl();
+    ctaBookingBtn.setAttribute("href", url);
+    ctaBookingBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.open(url, "_blank");
+    });
+  }
+
   const durBtns = document.querySelectorAll(".dur-btn");
   const serviceRadios = document.querySelectorAll("input[name='calcService']");
   const calcPriceDisplay = document.getElementById("calcPriceDisplay");
@@ -288,10 +369,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Set WhatsApp Order button link
     if (calcOrderBtn) {
       const srvText = (carPackageType === "allin") ? "Paket All In (Mobil+Supir+BBM)" : (selectedService === "supir" ? "Dengan Supir" : "Lepas Kunci");
-      const waText = `Halo A1 Rent Car Tasikmalaya, saya ingin booking:%0A🚗 Mobil: ${encodeURIComponent(carName)}%0A⏱️ Durasi: ${encodeURIComponent(durText)}%0A🛡️ Layanan: ${encodeURIComponent(srvText)}%0A💰 Estimasi Biaya: ${encodeURIComponent(formatRupiah(totalEstimate))}%0A%0AMohon info ketersediaan unit untuk jadwal saya. Terima kasih!`;
+      const waBookingUrl = getBookingWaUrl({
+        carName: carName,
+        duration: `${durText} (${srvText})`
+      });
 
       calcOrderBtn.onclick = () => {
-        window.open(`https://wa.me/6281284702322?text=${waText}`, "_blank");
+        window.open(waBookingUrl, "_blank");
       };
     }
   }
@@ -598,7 +682,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="price-row highlight"><span>Tarif 24 Jam:</span><strong>${car.price24}</strong></div>
         </div>
 
-        <a href="https://wa.me/6281284702322?text=Halo%20A1%20Rent%20Car,%20saya%20tertarik%20sewa%20${encodeURIComponent(car.name)}" target="_blank" class="btn-primary" style="width: 100%; text-align: center;">
+        <a href="${getBookingWaUrl({ carName: car.name })}" target="_blank" class="btn-primary" style="width: 100%; text-align: center;">
           <i class="fa-brands fa-whatsapp"></i> Pesan Mobil Ini Sekarang
         </a>
       `;
