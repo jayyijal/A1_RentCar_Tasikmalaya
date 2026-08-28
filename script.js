@@ -117,8 +117,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroImages = [
     { src: "Image/Innova.avif", name: "Toyota Innova Reborn" },
     { src: "Image/Brio Lemn.png", name: "Honda Brio" },
+    { src: "Image/N Max.png", name: "Yamaha NMAX 155" },
     { src: "Image/Toyota-Fortuner no Background.png", name: "Toyota Fortuner GR" },
+    { src: "Image/PCX.png", name: "Honda PCX 160" },
     { src: "Image/Xpander No Bg.png", name: "Mitsubishi Xpander" },
+    { src: "Image/Beat.png", name: "Honda Beat" },
     { src: "Image/Pajero No Bg.png", name: "Mitsubishi Pajero Dakar" },
     { src: "Image/Toyota Hiace No Bg.png", name: "Toyota Hiace" }
   ];
@@ -347,9 +350,9 @@ document.addEventListener("DOMContentLoaded", () => {
       durText = "3 Hari (Diskon Promo 5%)";
     }
 
-    // Additional Driver fee (+150k/day for standard cars, included for Van)
+    // Additional Driver fee (+150k/day for standard cars, included for Van, not applicable for Motor)
     let driverFee = 0;
-    if (selectedService === "supir" && carPackageType !== "allin") {
+    if (selectedService === "supir" && carPackageType !== "allin" && carPackageType !== "motor") {
       const days = Math.ceil(selectedDuration / 24) || 1;
       driverFee = 150000 * days;
     }
@@ -362,13 +365,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (calcNoteDisplay) {
-      const srvText = (carPackageType === "allin") ? "Paket All In (Mobil+Supir+BBM)" : (selectedService === "supir" ? "Dengan Supir (+Rp150rb/hr)" : "Lepas Kunci");
+      const srvText = (carPackageType === "allin") 
+        ? "Paket All In (Mobil+Supir+BBM)" 
+        : (carPackageType === "motor" 
+            ? "Lepas Kunci (Free 2 Helm + Jas Hujan)" 
+            : (selectedService === "supir" ? "Dengan Supir (+Rp150rb/hr)" : "Lepas Kunci"));
       calcNoteDisplay.textContent = `*Estimasi sewa ${carName} selama ${durText} (${srvText}).`;
     }
 
     // Set WhatsApp Order button link
     if (calcOrderBtn) {
-      const srvText = (carPackageType === "allin") ? "Paket All In (Mobil+Supir+BBM)" : (selectedService === "supir" ? "Dengan Supir" : "Lepas Kunci");
+      const srvText = (carPackageType === "allin") 
+        ? "Paket All In (Mobil+Supir+BBM)" 
+        : (carPackageType === "motor" 
+            ? "Lepas Kunci (Motor)" 
+            : (selectedService === "supir" ? "Dengan Supir" : "Lepas Kunci"));
       const waBookingUrl = getBookingWaUrl({
         carName: carName,
         duration: `${durText} (${srvText})`
@@ -434,7 +445,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (matchesCategory && matchesSearch) {
         matchCount++;
         // Display limit rule
-        if (isViewAll || matchCount <= INITIAL_VISIBLE_COUNT || searchTerm.length > 0) {
+        if (isViewAll || activeFilter !== "all" || matchCount <= INITIAL_VISIBLE_COUNT || searchTerm.length > 0) {
           card.classList.remove("hide");
           visibleCount++;
         } else {
@@ -452,7 +463,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Toggle View All button visibility
     if (viewAllBtn) {
-      if (matchCount <= INITIAL_VISIBLE_COUNT || searchTerm.length > 0) {
+      if (activeFilter !== "all" || matchCount <= INITIAL_VISIBLE_COUNT || searchTerm.length > 0) {
         viewAllBtn.closest(".view-all-wrapper").style.display = "none";
       } else {
         viewAllBtn.closest(".view-all-wrapper").style.display = "flex";
@@ -644,6 +655,45 @@ document.addEventListener("DOMContentLoaded", () => {
       price12: "Paket All In",
       price24: "Rp 2.000.000",
       desc: "Microbus kapasitas maksimal untuk perjalanan rombongan besar dengan fasilitas hiburan lengkap."
+    },
+    beat: {
+      name: "Honda BeAT CBS Fi 110cc",
+      category: "Sepeda Motor",
+      img: "Image/Beat.png",
+      year: "2024",
+      transmission: "Matic (eSP)",
+      seats: "2 Orang",
+      fuel: "Bensin (Super Irit)",
+      features: ["Termasuk 2 Helm SNI Bersih", "Jas Hujan Siap Pakai", "Konsumsi BBM Super Irit (60 km/L)", "Lincah Selap-Selip Perkotaan", "Unit Selalu Diservis Rutin"],
+      price12: "Not Available",
+      price24: "Rp 125.000",
+      desc: "Motor matic paling lincah dan hemat bahan bakar, cocok untuk mobilitas cepat di Tasikmalaya dan Ciamis tanpa khawatir macet."
+    },
+    nmax: {
+      name: "Yamaha NMAX 155 VVA",
+      category: "Maxi Scooter",
+      img: "Image/N Max.png",
+      year: "2024",
+      transmission: "Matic (155cc VVA)",
+      seats: "2 Orang",
+      fuel: "Bensin (Pertamax)",
+      features: ["Termasuk 2 Helm SNI Bersih", "Jas Hujan Berkualitas", "Bagasi Luas Muat Helm Full Face", "Posisi Berkendara Ekstra Nyaman & Santai", "Power Socket Charger HP"],
+      price12: "Not Available",
+      price24: "Rp 200.000",
+      desc: "Skutik maxi premium dengan posisi riding ergonomis, bertenaga besar 155cc VVA, dan bagasi luas untuk perjalanan harian maupun liburan santai."
+    },
+    pcx: {
+      name: "Honda PCX 160 eSP+",
+      category: "Premium Scooter",
+      img: "Image/PCX.png",
+      year: "2024",
+      transmission: "Matic (160cc 4-Valves)",
+      seats: "2 Orang",
+      fuel: "Bensin (Pertamax)",
+      features: ["Termasuk 2 Helm SNI Bersih", "Jas Hujan Premium", "Smart Key System (Keyless)", "Bagasi Besar 30 Liter", "USB Charger Type-A"],
+      price12: "Not Available",
+      price24: "Rp 175.000",
+      desc: "Skuter matic mewah dan elegan dengan mesin bertenaga halus 160cc eSP+, kenyamanan suspensi maksimal, serta fitur smart key modern."
     }
   };
 
@@ -683,7 +733,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
 
         <a href="${getBookingWaUrl({ carName: car.name })}" target="_blank" class="btn-primary" style="width: 100%; text-align: center;">
-          <i class="fa-brands fa-whatsapp"></i> Pesan Mobil Ini Sekarang
+          <i class="fa-brands fa-whatsapp"></i> Pesan ${car.category.includes("Motor") || car.category.includes("Scooter") ? "Motor" : "Mobil"} Ini Sekarang
         </a>
       `;
 
@@ -791,10 +841,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const recentBookingSamples = [
     { user: "Dadang (Tasikmalaya)", msg: "Baru saja booking Innova Reborn (2 Hari)", time: "2 menit yang lalu" },
     { user: "Bu Sarah (Cihideung)", msg: "Baru saja booking Honda Brio (24 Jam)", time: "5 menit yang lalu" },
-    { user: "Sdr. Dimas (Indihiang)", msg: "Booking Daihatsu Sigra Lepas Kunci", time: "8 menit yang lalu" },
-    { user: "Dara", msg: "Booking Toyota Hiace + Supir untuk Wisata", time: "14 menit yang lalu" },
-    { user: "Pak Haji Dedi (Singaparna)", msg: "Booking Toyota Fortuner GR Sport", time: "18 menit yang lalu" },
-    { user: "Kak Nisa (Tawang)", msg: "Booking Mitsubishi Xpander untuk Weekend", time: "25 menit yang lalu" }
+    { user: "Sdr. Rendy (Cihideung)", msg: "Baru saja booking Yamaha NMAX (24 Jam)", time: "7 menit yang lalu" },
+    { user: "Sdr. Dimas (Indihiang)", msg: "Booking Daihatsu Sigra Lepas Kunci", time: "10 menit yang lalu" },
+    { user: "Alfi (Cibeureum)", msg: "Booking Honda Beat (24 Jam)", time: "12 menit yang lalu" },
+    { user: "Dara", msg: "Booking Toyota Hiace + Supir untuk Wisata", time: "16 menit yang lalu" },
+    { user: "Rian (Singaparna)", msg: "Booking Honda PCX 160 (24 Jam)", time: "20 menit yang lalu" },
+    { user: "Pak Haji Dedi (Singaparna)", msg: "Booking Toyota Fortuner GR Sport", time: "24 menit yang lalu" },
+    { user: "Kak Nisa (Tawang)", msg: "Booking Mitsubishi Xpander untuk Weekend", time: "30 menit yang lalu" }
   ];
 
   let toastIndex = 0;
